@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    user-select: none;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    background: rgba(20, 20, 25, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    color: white;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 10px;
+}
+
+.close-btn {
+    cursor: pointer;
+    color: #ff5555;
+    font-size: 1.2rem;
+    transition: 0.2s;
+}
+.close-btn:hover { color: white; }
+
+/* PROP SELECTOR STYLES */
+.prop-grid {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.prop-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 8px;
+    width: 180px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.prop-card:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: #00bcd4;
+    transform: translateY(-5px);
+}
+
+.prop-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* MANAGER STYLES */
+.manager-container { width: 500px; }
+
+.table-header {
+    display: flex;
+    font-weight: bold;
+    color: #888;
+    padding: 0 10px 10px 10px;
+}
+.table-header span:nth-child(1) { width: 15%; }
+.table-header span:nth-child(2) { width: 55%; }
+.table-header span:nth-child(3) { width: 30%; text-align: right; }
+
+.trash-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.trash-row {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.03);
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+.trash-row:hover { background: rgba(255,255,255,0.08); }
+
+.trash-row span:nth-child(1) { width: 15%; color: #00bcd4; font-weight: bold; }
+.trash-row span:nth-child(2) { width: 55%; font-size: 0.9rem; }
+.trash-row .actions { width: 30%; text-align: right; }
+
+.btn-icon {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    margin-left: 5px;
+}
+
+.btn-teleport { background: #00bcd4; }
+.btn-teleport:hover { background: #0097a7; }
+
+.btn-delete { background: #ff5555; }
+.btn-delete:hover { background: #d32f2f; }
+
+#lzlogo {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 300px;
+    opacity: 0.23;
+    position: absolute;
+  }
+  #lzlogo2 {
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 200px;
+    opacity: 0.23;
+    position: absolute;
+  }
